@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Srabjot's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9b045c7dda.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="header-text">
+            <p> Front End Developer</p>
+                <h1> Hi, My name is <span>Srabjot Shandu</span> from<br>Birmingham, United Kingdom</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2ndpic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title-1">About Me</h1>
+                    <p>Hey im a front end developer who all about facing new challenges and taking them on, i have learnt coding from the University of Birmingham Bootcamp and have worked on many projects that can be found on my Github account</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML, CSS & Javascript</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Develpopment</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Creating Apps For IOS/Android</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>None</span><br>Still Currently attending The University of <br> Birmingham bootcamp</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>The University Of Birmingham Bootcamp</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="contrainer">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p> Web development is the work involved in developing a website for the Internet or an intranet. 
+                        Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, 
+                        and social network services</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-light fa-crop-simple"></i>
+                    <h2> HTML, CSS & Javascript</h2>
+                    <p> HTML provides the basic structure of sites, which is enhanced and modified by other technologies like CSS and JavaScript. CSS is used to control presentation,
+                        formatting, and layout. JavaScript is used to control the behavior of different elements</p>
+                        <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2> App Design</h2>
+                    <p> Mobile application development is the process of creating software applications that run on a mobile device, 
+                        and a typical mobile application utilizes a network connection to work with remote computing resources.</p>
+                        <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3> Social Media</h3>
+                        <P>An App that can connect you to loved ones or make
+                            you meet new people all around the world.
+                            <br> Download it from App Store
+                        </P>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>   
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music Streaming App</h3>
+                        <P>An App that can connect you to loved ones or make
+                            you meet new people all around the world.
+                            <br> Download it from App Store
+                        </P>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3> Online Shopping Servies</h3>
+                        <P>An App that can connect you to loved ones or make
+                            you meet new people all around the world.
+                            <br> Download it from App Store
+                        </P>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+        <div id="contact">
+            <div class="container">
+                    <h1 id="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> Email Address: srabjot123shandu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> Phone Number: 07795262762</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+
+
+</body>
+</html>
